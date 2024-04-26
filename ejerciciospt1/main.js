@@ -52,3 +52,4 @@ console.log(arrayNum[arrayNum.length-1]);
 
 // ejer 13
 frutas.forEach((fruta) => console.log(Array(fruta)));
+

@@ -89,3 +89,36 @@ listaSupermercado.forEach((item)=> console.log(item));
 
 console.groupEnd()
 
+
+let numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+
+let numerosPar = numeros.filter((num) => num%2===0);
+console.log(numerosPar);
+
+let nombresCoders =[
+    "santiago",
+    'alberto',
+    "reycon",
+    "narciris",
+    "pablo",
+    "carolina",
+    "marlon",
+    "brandon",
+    "edson",
+    "esteban",
+    "carlos",
+    "shirly"
+];
+let nombreConConsonante = []
+let vocales = 'aeiou'
+let nombresConA = nombresCoders.filter((nombre) => vocales.includes(nombre[0]))
+nombresCoders.forEach((nombre) => {
+    if (!vocales.includes(nombre[0])){
+        nombreConConsonante.push(nombre)
+    };
+});
+
+let nomsConConso = nombresCoders.filter((nombre) => !vocales.includes(nombre[0]))
+
+console.log(nombreConConsonante, nombresConA, nomsConConso);
+
